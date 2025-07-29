@@ -30,7 +30,7 @@ function Contact() {
         <ul className='contact__links'>
           <li className='contact__link'> 
             <img src={emailIcon} alt=""/>
-            <a
+            <p className='contact_link'
               onClick={(e) => {
                 e.preventDefault();
                 copyEmailToClipboard();
@@ -39,7 +39,7 @@ function Contact() {
               aria-label="Copy email to clipboard"
             >
               {email}
-            </a>
+            </p>
           </li>
           <li className='contact__link'> 
             <img src={linkedinIcon} alt=""/>
