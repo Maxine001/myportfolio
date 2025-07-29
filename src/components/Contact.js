@@ -31,7 +31,6 @@ function Contact() {
           <li className='contact__link'> 
             <img src={emailIcon} alt=""/>
             <a
-              href="#"
               onClick={(e) => {
                 e.preventDefault();
                 copyEmailToClipboard();
@@ -42,10 +41,9 @@ function Contact() {
               {email}
             </a>
           </li>
-
           <li className='contact__link'> 
             <img src={linkedinIcon} alt=""/>
-            <a href='https://www.linkedin.com/in/malcolm-nnamdi-853861292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_'>myemail@gmail.com</a>
+            <a href='https://www.linkedin.com/in/malcolm-nnamdi-853861292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_'>mylinkdinprofile</a>
           </li>
 
           <li className='contact__link'> 
