@@ -10,7 +10,7 @@ function About() {
       <img src={aboutItem} className='about__img' alt=''/>
       <ul className='about__items'>
         <li className='about__item'> 
-           {<img src={cursorIcon} alt=''/>}
+           {<img className ="abt-image" src={cursorIcon} alt=''/>}
            <div>
               <h3>Frontend developer</h3>
               <p>i'm a frontend developer with experience in building responsive and optimized websites and webapps
@@ -20,7 +20,7 @@ function About() {
         </li>
 
         <li className='about__item'>
-           {<img src={serverIcon} alt=''/>}
+           {<img className ="abt-image" src={serverIcon} alt=''/>}
            <div>
               <h3>Data scientist /  Data Engineer</h3>
               <p>Building and maintaining data pipelines using tools like SQL, Python, Spark, Airflow. <br></br>Collecting, transforming, storing, and optimizing data for analysis.</p>
@@ -28,7 +28,7 @@ function About() {
         </li>
 
         <li className='about__item'>
-           {<img src={cursorIcon} alt=''/>}
+           {<img className ="abt-image" src={cursorIcon} alt=''/>}
            <div>
               <h3>Ui developer</h3>
               <p>I focus on building user interface based on design mockups, with Skills like HTML, CSS, JavaScript, react, typescript, responsive design, accessibility with tools like Figma to code workflows, Sass, Tailwind CSS.</p>

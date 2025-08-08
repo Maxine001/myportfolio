@@ -151,6 +151,7 @@ html {
 }
 
 .hero__contactBtn {
+  margin-top: 30px;
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -278,6 +279,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  
 }
 
 .about__item {
@@ -313,9 +315,7 @@ html {
 
 @media screen and (max-width: 830px) {
   .about__container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+   padding: 40px 20px;
   }
   .about__content {
     flex-direction: column;
@@ -595,6 +595,12 @@ html {
   gap: 26px;
 }
 
+.con_link{
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
 .contact__link {
   display: flex;
   align-items: center;
@@ -662,6 +668,36 @@ html {
     padding: 40px 5%;
     border-radius: 15px;
   }
+
+
+
+  .abt-image{
+    display: none;
+  }
+
+  .about__item{
+    max-width: fit-content;
+    padding: 10px 20px;
+    background-size: 100% 100%;
+
+  }
+
+  .about__items{
+    display: flex;
+    justify-content: flex-start;
+
+  }
+
+  
+.about__title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  justify-content: center;
+}
 
   .contact__content {
     flex-direction: column;

@@ -95,7 +95,7 @@ export const projects = [
     imageSrc: project,
     description:
       "project was made to let users/customers book a photography sessions. Users select available time, book and make payment.",
-    skills: ["React", "vue.js", "Node", "Typescript","Tailwind CSS", "PostgreSQL", "Supabase"],
+    skills: ["React", "Vite", "Node", "Typescript","Tailwind CSS", "PostgreSQL", "Supabase"],
     demo: "https://bookwithmexy.netlify.app/",
     source: "https://github.com/Maxine001/mexybookings",
   },
@@ -111,7 +111,7 @@ export const projects = [
   },
   { 
     id: 3,
-    title: "Project C",
+    title: "Starz Coin",
     imageSrc: project3,
     description:
       "pending...........",

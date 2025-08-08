@@ -30,7 +30,7 @@ function Contact() {
         <ul className='contact__links'>
           <li className='contact__link'> 
             <img src={emailIcon} alt=""/>
-            <p className='contact_link'
+            <p className='con_link'
               onClick={(e) => {
                 e.preventDefault();
                 copyEmailToClipboard();
