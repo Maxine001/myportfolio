@@ -5,7 +5,7 @@ import githubIcon from "../assets/githubIcon.png"
 
 function Contact() {
   const [copied, setCopied] = useState(false);
-  const email = "maxine001@gmail.com";
+  const email = "maxinetech001@gmail.com";
 
   const copyEmailToClipboard = () => {
     navigator.clipboard.writeText(email).then(() => {
