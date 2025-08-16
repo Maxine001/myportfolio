@@ -1,0 +1,239 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out;
+}
+
+.preloader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rolling Circle Preloader */
+.rolling-preloader {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.rolling-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b, #fb5607);
+  background-size: 300% 300%;
+  animation: roll 2s linear infinite, neonGlow 3s ease-in-out infinite;
+  position: relative;
+  box-shadow: 
+    0 0 20px #ff006e,
+    0 0 40px #8338ec,
+    0 0 60px #3a86ff,
+    0 0 80px #06ffa5;
+}
+
+.rolling-circle::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b, #fb5607);
+  background-size: 300% 300%;
+  animation: neonGlow 3s ease-in-out infinite;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.rolling-circle-shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 20px;
+  background: radial-gradient(ellipse at center, rgba(255, 0, 110, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, 50px);
+  animation: shadowPulse 2s ease-in-out infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes neonGlow {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 
+      0 0 20px #ff006e,
+      0 0 40px #8338ec,
+      0 0 60px #3a86ff,
+      0 0 80px #06ffa5;
+  }
+  50% {
+    background-position: 100% 50%;
+    box-shadow: 
+      0 0 30px #ffbe0b,
+      0 0 60px #fb5607,
+      0 0 90px #ff006e,
+      0 0 120px #8338ec;
+  }
+  100% {
+    background-position: 0% 50%;
+    box-shadow: 
+      0 0 20px #ff006e,
+      0 0 40px #8338ec,
+      0 0 60px #3a86ff,
+      0 0 80px #06ffa5;
+  }
+}
+
+@keyframes shadowPulse {
+  0%, 100% {
+    transform: translate(-50%, 50px) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, 50px) scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+/* Neon Text Styles */
+.neon-container {
+  text-align: center;
+}
+
+.neon-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
+  animation: neonFlicker 1.5s ease-in-out infinite alternate;
+}
+
+.neon-text.fade-out-text {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #ff00ff,
+    0 0 35px #ff00ff,
+    0 0 40px #ff00ff,
+    0 0 50px #ff00ff,
+    0 0 75px #ff00ff,
+    0 0 100px #ff00ff,
+    0 0 150px #ff00ff;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: #00ffff;
+  text-shadow: 
+    0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 15px #00ffff,
+    0 0 20px #00ffff,
+    0 0 35px #00ffff,
+    0 0 40px #00ffff;
+}
+
+@keyframes neonFlicker {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #fff,
+      0 0 20px #ff00ff,
+      0 0 35px #ff00ff,
+      0 0 40px #ff00ff,
+      0 0 50px #ff00ff,
+      0 0 75px #ff00ff,
+      0 0 100px #ff00ff,
+      0 0 150px #ff00ff;
+  }
+  50% {
+    text-shadow: 
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 8px #fff,
+      0 0 10px #00ffff,
+      0 0 20px #00ffff,
+      0 0 25px #00ffff,
+      0 0 30px #00ffff,
+      0 0 50px #00ffff,
+      0 0 75px #00ffff,
+      0 0 100px #00ffff;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .neon-text {
+    font-size: 2rem;
+  }
+  
+  .rolling-circle {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .neon-text {
+    font-size: 1.5rem;
+  }
+  
+  .rolling-circle {
+    width: 50px;
+    height: 50px;
+  }
+}

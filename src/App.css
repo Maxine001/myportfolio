@@ -146,11 +146,6 @@ html {
   font-weight: 900;
   margin-bottom: 33px;
 
-  /* background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
-  ); */
 }
 
 .hero__description {
@@ -720,10 +715,16 @@ html {
     border-radius: 15px;
   }
 
+.app.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
 
 
   .abt-image{
-    display: block;
+    display: none;
     width: 40px;
     height: 40px;
     margin-right: 15px;
