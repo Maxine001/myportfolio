@@ -13,8 +13,8 @@ function About() {
            {<img className ="abt-image" src={cursorIcon} alt=''/>}
            <div>
               <h3>Frontend developer</h3>
-              <p>i'm a frontend developer with experience in building responsive and optimized websites and webapps
-               Focused on building dynamic and interactive components with frameworks like React, Vite, Next.Js and also component architecture like routing, state management using common tools like Redux, React Router.
+              <p>I'm a frontend developer with experience in building responsive and optimized websites and webapps
+               Focused on building dynamic and interactive components with frameworks like React, Vite, Next.Js and also component architecture like routing.
               </p>
            </div>
         </li>

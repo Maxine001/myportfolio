@@ -299,7 +299,7 @@ html {
   background-color: rgba(12, 12, 12, 0.6);
   border-radius: 15px;
   padding: 73px;
-  margin-top: 129px;
+  margin-top: 50px;
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
@@ -385,6 +385,10 @@ html {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .hero__contactBtn{
+    margin-top: 0;
   }
 }
 
