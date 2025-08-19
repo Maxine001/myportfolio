@@ -31,8 +31,6 @@ function Hero() {
         className={`hero__img ${imageLoaded ? 'loaded' : 'loading'}`}
         alt="Malcolm - Frontend Developer"
         loading="eager"
-        width="400"
-        height="400"
       />
       
       <div className='hero__topBlur'></div>
