@@ -660,7 +660,7 @@ html {
 .contact__link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 5px;
   transition: transform 0.3s ease;
 }
 
